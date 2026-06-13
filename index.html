@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raunak Dey — Portfolio · Bayesian Inference, Systems Modeling &amp; Scientific AI</title>
+  <meta name="description" content="The research portfolio of Raunak Dey — turning hard, noisy, real-world systems into parameters, models, and decisions, with predicted uncertainty and quantified confidence. Bayesian inference and scientific AI." />
+
+  <!-- Open Graph (optional: drop a 1200x630 image at assets/og.png and uncomment) -->
+  <meta property="og:title" content="Raunak Dey — Bayesian Inference &amp; Scientific AI" />
+  <meta property="og:description" content="Turning messy scientific data into parameters, models, and decisions you can trust." />
+  <meta property="og:type" content="website" />
+  <!-- <meta property="og:image" content="assets/og.png" /> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#work">Skip to portfolio</a>
+
+  <!-- ───────────────────────────── HEADER ───────────────────────────── -->
+  <header class="nav" id="top">
+    <div class="wrap nav__inner">
+      <a class="brand" href="#top" aria-label="Raunak Dey — home">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__text">Raunak&nbsp;Dey<span class="brand__sub">Portfolio</span></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#work">Portfolio</a>
+        <a href="#tools">Tools</a>
+        <a href="#about">About</a>
+        <a class="nav__cta" href="#contact">Get in touch</a>
+      </nav>
+
+      <button class="nav__toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobile-menu" hidden>
+      <a href="#work">Portfolio</a>
+      <a href="#tools">Tools</a>
+      <a href="#about">About</a>
+      <a href="#contact">Get in touch</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ───────────────────────────── HERO ───────────────────────────── -->
+    <section class="hero">
+      <div class="hero__ridge" aria-hidden="true">
+        <svg id="ridgeline" viewBox="0 0 1200 520" preserveAspectRatio="xMidYMid slice"></svg>
+      </div>
+
+      <div class="wrap hero__inner">
+        <p class="eyebrow reveal">Scientific&nbsp;AI · Bayesian&nbsp;Inference · Systems&nbsp;Modeling</p>
+        <h1 class="hero__title reveal">
+          Turning messy scientific data into <em>parameters, models, and decisions</em> you can trust.
+        </h1>
+        <p class="hero__lede reveal">
+          I pull reliable answers out of hard, noisy, real-world systems — from microbial ecosystems
+          to physical sensors — using Bayesian inference and modern scientific AI. Every answer
+          arrives with predicted uncertainty and quantified confidence, not a single number that
+          hides the risk.
+        </p>
+        <div class="hero__cta reveal">
+          <a class="btn btn--solid" href="#contact">Get in touch</a>
+          <a class="btn btn--ghost" href="#work">See the work</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── WHAT I DO ───────────────────────── -->
+    <section class="overview wrap" aria-label="What I do">
+      <div class="overview__grid">
+        <article class="pillarcard pillarcard--teal reveal">
+          <span class="pillarcard__tag">01 — Inference</span>
+          <h2>Estimate the unknown.<br />Quantify the uncertainty.</h2>
+          <p>
+            Recover the hidden parameters and mechanisms behind real data — with calibrated
+            uncertainty, not point estimates that hide the risk. The data is usually sparse,
+            noisy, or partly confidential; the inference still has to hold up.
+          </p>
+          <a class="pillarcard__link" href="#inference">Explore inference work →</a>
+        </article>
+
+        <article class="pillarcard pillarcard--violet reveal">
+          <span class="pillarcard__tag">02 — Systems Modeling &amp; Decisions</span>
+          <h2>Model the system.<br />Forecast it. Decide.</h2>
+          <p>
+            Build mechanistic and data-driven models that capture how a system behaves, predict
+            where it is headed, and turn that into a decision — dosing, timing, monitoring, or
+            allocation.
+          </p>
+          <a class="pillarcard__link" href="#systems">Explore modeling work →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── PORTFOLIO ANCHOR ───────────────────────── -->
+    <div id="work"></div>
+
+    <!-- ───────────────────────── INFERENCE ───────────────────────── -->
+    <section class="block" id="inference">
+      <div class="wrap">
+        <header class="block__head reveal">
+          <span class="block__num">01</span>
+          <div>
+            <h2 class="block__title">Inference</h2>
+            <p class="block__sub">
+              Pointwise estimates and full Bayesian inference for systems where being wrong is
+              expensive.
+            </p>
+          </div>
+        </header>
+
+        <!-- Domain: Biology & Microbial Systems -->
+        <h3 class="domain reveal"><span>Biology &amp; Microbial Systems</span></h3>
+        <div class="grid">
+
+          <!-- CARD: Phage–host interaction networks (PUBLISHED — lead) -->
+          <article class="card card--teal reveal">
+            <div class="card__body">
+              <span class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6.4 6.6 17 7M6.6 7.6 11.2 15.8M16.8 8 12.6 15.8" />
+                  <circle cx="5" cy="6" r="2.1" fill="currentColor" stroke="none" />
+                  <circle cx="18.5" cy="7" r="2.1" fill="currentColor" stroke="none" />
+                  <circle cx="12" cy="17.5" r="2.1" fill="currentColor" stroke="none" />
+                </svg>
+              </span>
+              <div class="card__badges">
+                <span class="badge badge--live">Published · The ISME Journal</span>
+              </div>
+              <h4 class="card__title">Phage–host interaction networks</h4>
+              <p class="card__desc">
+                Untangling who infects whom in a microbial community is genuinely hard. I infer the
+                underlying interaction traits and networks — pairwise and at community scale — for
+                <em>Cellulophaga baltica</em> and <em>Pseudoalteromonas</em>, with the uncertainty
+                that separates real links from noise.
+              </p>
+              <ul class="chips" aria-label="Tools used">
+                <li>B²</li><li>InvODE</li><li>Bayesian inference</li>
+              </ul>
+              <div class="links">
+                <a class="link" href="https://academic.oup.com/ismej/article/20/1/wrag041/8526250" target="_blank" rel="noopener">Read the paper ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD: Phage therapy -->
+          <article class="card card--teal reveal">
+            <div class="card__body">
+              <span class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 3h6" />
+                  <path d="M10 3v6L5.3 17.1A1.8 1.8 0 0 0 6.9 20h10.2a1.8 1.8 0 0 0 1.6-2.9L14 9V3" />
+                  <path d="M7.6 14.5h8.8" />
+                </svg>
+              </span>
+              <div class="card__badges">
+                <span class="badge badge--review">Data confidential · paper in prep</span>
+              </div>
+              <h4 class="card__title">Phage therapy — dose &amp; outcome optimization</h4>
+              <p class="card__desc">
+                Predicting treatment outcomes from limited clinical data is fragile when resistant
+                bacterial strains keep emerging mid-treatment. I estimate the full coupled system —
+                phages, bacteria, antibodies, and multiple emergent resistant types — with calibrated
+                uncertainty, enough to compare dosing strategies and anticipate outcomes on real data.
+              </p>
+              <ul class="chips" aria-label="Tools used">
+                <li>B²</li><li>InvODE</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- CARD: Marine phage decay -->
+          <article class="card card--teal reveal">
+            <div class="card__body">
+              <span class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 3s6 6.6 6 11a6 6 0 0 1-12 0c0-4.4 6-11 6-11z" />
+                </svg>
+              </span>
+              <div class="card__badges">
+                <span class="badge badge--review">Collaboration · pre-publication</span>
+              </div>
+              <h4 class="card__title">Marine phage decay from global field data</h4>
+              <p class="card__desc">
+                Field measurements gathered across the global ocean are noisy and heterogeneous. I
+                infer phage decay rates straight from that data — turning scattered field observations
+                into quantitative parameters, with error bars, that downstream ecological models can
+                rely on.
+              </p>
+              <ul class="chips" aria-label="Tools used">
+                <li>B²</li><li>InvODE</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- CARD: Temperature-dependent growth -->
+          <article class="card card--teal reveal">
+            <div class="card__body">
+              <span class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M13 14.6V5a2.5 2.5 0 0 0-5 0v9.6a4 4 0 1 0 5 0z" />
+                  <path d="M10.5 14.6V8.5" />
+                </svg>
+              </span>
+              <div class="card__badges">
+                <span class="badge badge--review">In review</span>
+              </div>
+              <h4 class="card__title">Temperature-dependent microbial growth</h4>
+              <p class="card__desc">
+                How fast does a bloom-forming cyanobacterium grow as the water warms? I infer the
+                temperature-dependent growth parameters from experimental data — the quantitative
+                relationship, and its uncertainty, that feeds water-quality and bloom-risk predictions.
+              </p>
+              <ul class="chips" aria-label="Tools used">
+                <li>B²</li><li>InvODE</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <!-- Domain: Physical Systems & Sensing -->
+        <h3 class="domain reveal"><span>Physical Systems &amp; Sensing</span></h3>
+        <div class="grid">
+
+          <!-- CARD: Microrheology (PUBLISHED — lead) -->
+          <article class="card card--teal reveal">
+            <div class="card__body">
+              <span class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 12c1.8 0 1.8-6 3.6-6s1.8 6 3.6 6 1.8-6 3.6-6 1.8 6 3.6 6 1.8-6 3.6-6" />
+                </svg>
+              </span>
+              <div class="card__badges">
+                <span class="badge badge--live">Published</span>
+                <span class="badge badge--patent">Patented</span>
+              </div>
+              <h4 class="card__title">Microrheology — inferring material properties</h4>
+              <p class="card__desc">
+                Measure how a complex or biological fluid resists deformation — without a conventional
+                rheometer. I infer viscoelastic properties across a broad frequency range from
+                optical-tweezer trajectories: in lamin networks, biological samples, and viscoelastic
+                fluids.
+              </p>
+              <ul class="chips" aria-label="Tools used">
+                <li>Optical tweezers</li><li>Inverse modeling</li>
+              </ul>
+              <div class="links">
+                <a class="link" href="https://pubs.rsc.org/en/content/articlelanding/2021/sm/d1sm00293g/unauth" target="_blank" rel="noopener">Soft Matter ↗</a>
+                <a class="link" href="https://iprsearch.ipindia.gov.in/RQStatus/PatentCertificatePDF.aspx?AppNo=MjAyMjMxMDMwNTk0&FullPath=LVBhdGVudENlcnRpZmljYXRlMjQtMDUtMjAyNC5wZGY=" target="_blank" rel="noopener">Patent 539208 ↗</a>
+                <a class="link" href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11798/117980D/Microrheology-over-a-broad-frequency-range-probing-multiple-sinusoid-oscillating/10.1117/12.2596296.short" target="_blank" rel="noopener">SPIE ↗</a>
+                <a class="link" href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2mI3Lx4AAAAJ&citation_for_view=2mI3Lx4AAAAJ:zYLM7Y9cAGgC" target="_blank" rel="noopener">Scholar ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD: Random numbers (PUBLISHED) -->
+          <article class="card card--teal reveal">
+            <div class="card__body">
+              <span class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="4" y="4" width="16" height="16" rx="3.5" />
+                  <circle cx="9" cy="9" r="1.1" fill="currentColor" stroke="none" />
+                  <circle cx="15" cy="9" r="1.1" fill="currentColor" stroke="none" />
+                  <circle cx="12" cy="12" r="1.1" fill="currentColor" stroke="none" />
+                  <circle cx="9" cy="15" r="1.1" fill="currentColor" stroke="none" />
+                  <circle cx="15" cy="15" r="1.1" fill="currentColor" stroke="none" />
+                </svg>
+              </span>
+              <div class="card__badges">
+                <span class="badge badge--live">Published</span>
+              </div>
+              <h4 class="card__title">Random numbers from physical noise</h4>
+              <p class="card__desc">
+                Physical noise can be a source of certifiable randomness. I extract random numbers
+                from real Brownian trajectories and validate them against rigorous statistical
+                randomness tests — bridging experimental physics and cryptographic-grade certification.
+              </p>
+              <ul class="chips" aria-label="Tools used">
+                <li>Stochastic dynamics</li><li>Learning algorithms</li>
+              </ul>
+              <div class="links">
+                <a class="link" href="https://www.frontiersin.org/journals/physics/articles/10.3389/fphy.2020.576948/full" target="_blank" rel="noopener">Frontiers in Physics ↗</a>
+                <a class="link" href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11798/117980F/Random-number-extraction-from-optically-trapped-Brownian-oscillator-using-an/10.1117/12.2596502.short" target="_blank" rel="noopener">SPIE ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD: Behavioral inference from video -->
+          <article class="card card--teal reveal">
+            <div class="card__body">
+              <span class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="6" width="13" height="12" rx="2.5" />
+                  <path d="m16 10.5 5-3v9l-5-3z" />
+                </svg>
+              </span>
+              <div class="card__badges">
+                <span class="badge badge--soon">Project</span>
+              </div>
+              <h4 class="card__title">Behavioral inference from video</h4>
+              <p class="card__desc">
+                Raw animal video is rich but unstructured. I turn it into quantitative behavioral
+                inference — interpretable parameters that describe what an animal is actually doing,
+                frame after frame.
+              </p>
+              <ul class="chips" aria-label="Tools used">
+                <li>Computer vision</li><li>Bayesian inference</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- CARD: Drone localization -->
+          <article class="card card--teal reveal">
+            <div class="card__body">
+              <span class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="9" y="9" width="6" height="6" rx="1.4" />
+                  <path d="M9.4 9.4 6.6 6.6M14.6 9.4 17.4 6.6M9.4 14.6 6.6 17.4M14.6 14.6 17.4 17.4" />
+                  <circle cx="5" cy="5" r="2.3" />
+                  <circle cx="19" cy="5" r="2.3" />
+                  <circle cx="5" cy="19" r="2.3" />
+                  <circle cx="19" cy="19" r="2.3" />
+                </svg>
+              </span>
+              <div class="card__badges">
+                <span class="badge badge--soon">Project</span>
+              </div>
+              <h4 class="card__title">Drone localization &amp; optimal search</h4>
+              <p class="card__desc">
+                Find a signal source fast — and move so it is found even faster. I combine sequential
+                Bayesian localization from phase-difference-of-arrival measurements with an optimal
+                movement policy, cutting search time to a fraction of the baseline for
+                search-and-rescue problems.
+              </p>
+              <ul class="chips" aria-label="Tools used">
+                <li>Sequential Bayesian</li><li>Optimal control</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────── SYSTEMS MODELING ───────────────────── -->
+    <section class="block block--alt" id="systems">
+      <div class="wrap">
+        <header class="block__head reveal">
+          <span class="block__num block__num--violet">02</span>
+          <div>
+            <h2 class="block__title">Systems Modeling &amp; Decision-Making</h2>
+            <p class="block__sub">
+              Mechanistic and data-driven models that explain a system, forecast it, and support
+              the decision that follows.
+            </p>
+          </div>
+        </header>
+
+        <div class="grid">
+          <!-- CARD: Phage-microbe ecosystem modeling (PUBLISHED — lead) -->
+          <article class="card card--violet reveal">
+            <div class="card__body">
+              <span class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="2.6" />
+                  <ellipse cx="12" cy="12" rx="10" ry="4.4" />
+                  <ellipse cx="12" cy="12" rx="10" ry="4.4" transform="rotate(60 12 12)" />
+                  <ellipse cx="12" cy="12" rx="10" ry="4.4" transform="rotate(120 12 12)" />
+                </svg>
+              </span>
+              <div class="card__badges">
+                <span class="badge badge--live">Published · The ISME Journal</span>
+                <span class="badge badge--patent">Simons SCOPE</span>
+              </div>
+              <h4 class="card__title">Phage–microbe ecosystem modeling</h4>
+              <p class="card__desc">
+                Mechanistic models of phage–microbe ecosystems — pairwise and at community scale —
+                that capture the higher-order interactions driving coexistence and stability.
+                Developed within the Simons Foundation SCOPE collaboration.
+              </p>
+              <ul class="chips" aria-label="Tools used">
+                <li>Dynamical systems</li><li>ODE modeling</li>
+              </ul>
+              <div class="links">
+                <a class="link" href="https://academic.oup.com/ismej/article/20/1/wrag041/8526250" target="_blank" rel="noopener">Read the paper ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD: Forecasting microbial dynamics -->
+          <article class="card card--violet reveal">
+            <div class="card__body">
+              <span class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 16l5-4 3.5 2.5L20 7" />
+                  <path d="M15 7h5v5" />
+                </svg>
+              </span>
+              <div class="card__badges">
+                <span class="badge badge--soon">Project</span>
+              </div>
+              <h4 class="card__title">Forecasting microbial dynamics</h4>
+              <p class="card__desc">
+                Where is a microbial population headed next? I build forecasting models for microbial
+                dynamics so teams can anticipate future population states — with prediction intervals,
+                not just a point — for clinical decisions and environmental monitoring.
+              </p>
+              <ul class="chips" aria-label="Tools used">
+                <li>Time series</li><li>Scientific AI</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────────── TOOLS ───────────────────────────── -->
+    <section class="block" id="tools">
+      <div class="wrap">
+        <header class="block__head reveal">
+          <span class="block__num block__num--quiet">&lt;/&gt;</span>
+          <div>
+            <h2 class="block__title">Tools developed</h2>
+            <p class="block__sub">
+              Software I've built and maintain — the engines behind the inference and modeling above.
+            </p>
+          </div>
+        </header>
+
+        <div class="grid grid--tools">
+          <article class="tool reveal">
+            <div class="tool__head">
+              <span class="tool__name">B²</span>
+              <span class="badge badge--live">In review · code available</span>
+            </div>
+            <p class="tool__desc">
+              A Bayesian-inference engine for biological ODE models — Hamiltonian Monte Carlo and
+              MCMC, unified across PyMC, Turing, and JAGS so the model, not the framework, drives
+              the work.
+            </p>
+            <a class="link" href="https://b2-bayesian-for-biology.github.io/MCMCwithODEs_primer/" target="_blank" rel="noopener">Primer &amp; code ↗</a>
+          </article>
+
+          <article class="tool reveal">
+            <div class="tool__head">
+              <span class="tool__name">InvODE</span>
+              <span class="badge badge--live">Live</span>
+            </div>
+            <p class="tool__desc">
+              Recovers ODE parameters from noisy data using swarm sampling and a shrink-search
+              algorithm — reliable convergence even in high-dimensional parameter spaces where naïve
+              fitting stalls.
+            </p>
+            <a class="link" href="https://raunakdey.github.io/InvODE/" target="_blank" rel="noopener">Documentation ↗</a>
+          </article>
+
+          <article class="tool reveal">
+            <div class="tool__head">
+              <span class="tool__name">PHAMILY</span>
+              <span class="badge badge--soon">Coming soon</span>
+            </div>
+            <p class="tool__desc">
+              An interactive GUI for Bayesian analysis of phage–microbe datasets — model fitting,
+              statistical inference, and diagnostics packaged for biologists who don't want to write
+              the sampler themselves.
+            </p>
+            <span class="link link--muted">Release in progress</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────────── ABOUT ───────────────────────────── -->
+    <section class="about" id="about">
+      <div class="wrap about__inner">
+        <div class="about__text reveal">
+          <span class="eyebrow eyebrow--quiet">About me</span>
+          <h2 class="about__title">Raunak Dey</h2>
+          <p>
+            I'm a Physics PhD candidate at the University of Maryland, working at the intersection of
+            Bayesian inference, dynamical systems, and scientific AI. Behind the methods: 8
+            publications, 1 patent, and three tools I've built — and a habit of making hard, messy
+            problems tractable.
+          </p>
+          <a class="btn btn--ghost" href="https://raunakdey.github.io/" target="_blank" rel="noopener">More about me ↗</a>
+        </div>
+        <dl class="about__stats reveal">
+          <div><dt>8</dt><dd>publications</dd></div>
+          <div><dt>1</dt><dd>patent</dd></div>
+          <div><dt>3</dt><dd>tools</dd></div>
+          <div><dt>7+</dt><dd>years research</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ───────────────────────────── CONTACT ───────────────────────────── -->
+    <section class="contact" id="contact">
+      <div class="wrap contact__inner reveal">
+        <h2 class="contact__title">Let's get in touch.</h2>
+        <p class="contact__lede">
+          Running a lab and need inference or modeling firepower? Building something at a company
+          and want a real scientific edge? Either way — reach out.
+        </p>
+
+        <div class="contact__lanes">
+          <div class="lane">
+            <span class="lane__tag">For academics</span>
+            <p>Collaborations, co-authored work, and method development.</p>
+          </div>
+          <div class="lane">
+            <span class="lane__tag">For industry</span>
+            <p>Roles, consulting, prototypes, and scientific advising.</p>
+          </div>
+        </div>
+
+        <div class="contact__actions">
+          <a class="btn btn--solid" href="mailto:rdey@umd.edu?subject=Hello%20Raunak">Email me</a>
+          <button class="btn btn--ghost" id="copyEmail" data-email="rdey@umd.edu">
+            <span class="copy__label">rdey@umd.edu</span>
+            <span class="copy__icon" aria-hidden="true">⧉</span>
+          </button>
+        </div>
+
+        <nav class="contact__links" aria-label="Elsewhere">
+          <a href="https://linkedin.com/in/raunak-d-50991214a" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/RaunakDey" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://scholar.google.com/citations?user=2mI3Lx4AAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://raunakdey.github.io/" target="_blank" rel="noopener">Personal site</a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <span class="footer__brand">Raunak Dey</span>
+      <span class="footer__tag">Scientific AI · Bayesian inference · Systems modeling</span>
+      <span class="footer__year" id="year"></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
